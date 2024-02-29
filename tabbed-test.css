@@ -1,0 +1,188 @@
+/* If you have a long lesson title, adjust the size of your text here. Keep adjusting until the header text reduces before it wraps to two lines in the header box. Adjust the size of your browser window to test. You can adjust the larger and smaller text sizes below. */
+
+@media screen and (min-width: 901px) {
+  div.header1 {
+    font-size: 48px;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  div.header1 {
+    font-size: 28px;
+  }
+}
+    
+/* You should not need to make any changes to the code between the <style> tags, except where commented. */
+    
+    .header1 {
+        background: #ff6418;
+        font-family: Arial;
+        font-size: 48px;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        height: 110px;
+        text-shadow: 2px 2px #000;
+        max-width: 1024px;
+        margin-right: auto;
+        margin-left: auto;
+    }    
+    
+    .header2 {
+        position: relative;
+        top:50%; 
+        transform: translateY(-50%);
+    }
+    
+    .image1 {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-top: 10px;
+/* Adjust the max-width to the actual width of your image, not to exceed 1024px */
+        max-width: 1024px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .paragraph1 {
+        font-family: Arial;
+        font-size: 14pt;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .lesson-top {
+        display: none;
+    }
+    
+    .note-text {
+        background-color: #747474;
+        padding: 20px;
+        color: #fff;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    
+/*tabs*/
+    
+    .pc-tab > input, 
+    .pc-tab section > div {
+        display: none;
+    }
+    
+#tab1:checked ~ section .tab1, 
+#tab2:checked ~ section .tab2, 
+#tab3:checked ~ section .tab3 {
+        display: block;
+    }
+   
+    *, *:after, *:before{
+        box-sizing: border-box;
+    }
+
+    
+    #heading1 {
+        text-align: left;
+        font-size: 18px;
+        color: #e74c3c;
+        letter-spacing: 0.5px;
+    }
+    
+    .pc-tab{
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    
+    .pc-tab ul{
+        list-style-type: none;
+        margin: 0;
+        padding:0;
+    }
+    
+    .pc-tab ul li label{
+        float: left;
+        padding: 15px 25px;
+        border: 1px solid #ddd;
+        border-bottom: 0;
+        background-color: #eeeeee;
+        color: #000;
+        font-size: 14pt;
+    }
+    
+    .pc-tab ul li label:hover{
+        background-color: #ddd;
+    }
+    
+    .pc-tab ul li label:active{
+        background-color: #fff;
+    } 
+    
+    .pc-tab ul li:not(:last-child) label {
+        border-right-width: 0;
+    }
+    
+    .pc-tab section{
+        clear: both;
+    }
+    
+    .pc-tab section div{
+        padding: 20px;
+        width: 100%;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        line-height: 1.5em;
+        letter-spacing: 0.5px;
+        color: #000;
+        min-height: 360px;
+        height: auto;
+    }
+    
+    .box-title{
+        margin: 0; 
+        letter-spacing: 1px;
+        font-size: 14pt;
+        font-weight: 600;
+        color: #fc4c02;
+    }
+    
+    #tab1:checked ~ nav .tab1 label, 
+    #tab2:checked ~ nav .tab2 label, 
+    #tab3:checked ~ nav .tab3 label {
+        background-color: #fff;
+        color: #111;
+        position: relative;
+    }
+    
+    #tab1:checked ~ nav .tab1 label:after, 
+    #tab2:checked ~ nav .tab2 label:after, 
+    #tab3:checked ~ nav .tab3 label:after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        left: 0;
+        bottom: -1px;
+    }
+    .tab1, .tab2, .tab3, .intro {
+        font-size: 14pt;
+        font-family: "Arial";
+        color: #111;
+    }  
+
+    .tab1 ul li, .tab2 ul li, .tab3 ul li {
+        list-style: disc;
+        margin-left: 30px;
+    }
+
+    .tab1 ul li:last-child, .tab2 ul li:;:last-child, .tab3 ul li:last-child {
+        margin-bottom: 15px;
+    }
